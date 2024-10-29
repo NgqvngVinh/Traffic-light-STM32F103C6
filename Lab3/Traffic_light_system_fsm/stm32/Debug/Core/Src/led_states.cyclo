@@ -1,0 +1,12 @@
+../Core/Src/led_states.c:14:6:state_init	1
+../Core/Src/led_states.c:20:6:state_red	1
+../Core/Src/led_states.c:26:6:state_green	1
+../Core/Src/led_states.c:32:6:state_yellow	1
+../Core/Src/led_states.c:39:6:state_init1	1
+../Core/Src/led_states.c:46:6:state_red1	1
+../Core/Src/led_states.c:51:6:state_green1	1
+../Core/Src/led_states.c:56:6:state_yellow1	1
+../Core/Src/led_states.c:63:6:turn_on_traffic_led_x	5
+../Core/Src/led_states.c:84:6:turn_on_traffic_led_y	5
+../Core/Src/led_states.c:106:6:blinkind_led_traffic_x	5
+../Core/Src/led_states.c:128:6:blinkind_led_traffic_y	5

@@ -1,0 +1,4 @@
+../Core/Src/Led_states.c:12:6:state_init	1
+../Core/Src/Led_states.c:18:6:state_red	1
+../Core/Src/Led_states.c:24:6:state_green	1
+../Core/Src/Led_states.c:30:6:state_yellow	1

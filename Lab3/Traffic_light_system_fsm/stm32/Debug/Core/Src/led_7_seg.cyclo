@@ -1,0 +1,5 @@
+../Core/Src/led_7_seg.c:24:6:display7SEG	11
+../Core/Src/led_7_seg.c:141:6:onoff_gates_led	5
+../Core/Src/led_7_seg.c:217:6:update_2_led_7_seg_buffer_left	1
+../Core/Src/led_7_seg.c:221:6:update_2_led_7_seg_buffer_right	1
+../Core/Src/led_7_seg.c:245:6:led_7_seg_run	2

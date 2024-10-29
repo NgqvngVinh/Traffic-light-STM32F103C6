@@ -1,0 +1,8 @@
+../Core/Src/software_timer.c:31:6:setTimer0	1
+../Core/Src/software_timer.c:35:6:setTimer1	1
+../Core/Src/software_timer.c:39:6:setTimer2	1
+../Core/Src/software_timer.c:55:6:setTimer6	1
+../Core/Src/software_timer.c:66:6:clearTimer1	1
+../Core/Src/software_timer.c:70:6:clearTimer2	1
+../Core/Src/software_timer.c:86:6:clearTimer6	1
+../Core/Src/software_timer.c:93:6:timer_run	9
