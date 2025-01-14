@@ -13,11 +13,8 @@
 
 
 //variables
-//int num = 0;
 int led_7_seg_buffer[4] = {0};
 int index_led_7_seg = 0;
-//int count = 0;
-
 
 
 //functions
@@ -174,46 +171,6 @@ void onoff_gates_led(int index){
 }
 
 
-
-//original
-//void testgate(){
-//	if(timer3_flag == 1){
-//		count++;
-////		num++;
-//		switch(count){
-//		case 1:
-//			display7SEG(led_7_seg_buffer[1]);
-//			break;
-//		case 2:
-//			display7SEG(led_7_seg_buffer[2]);
-//			break;
-//		case 3:
-//			display7SEG(led_7_seg_buffer[3]);
-//			break;
-//		case 4:
-//			display7SEG(led_7_seg_buffer[4]);
-//			break;
-//		default:
-//			break;
-//	}
-//
-//		if(count >= 4){
-//			count = 0;
-//		}
-//
-//	if(timer3_flag == 1){
-//		num++;
-//		onoff_gates_led(num);
-//
-//		if(num >= 2){
-//			num = 0;
-//		}
-//	}
-//	setTimer3(100);
-//}
-//}
-
-
 void update_2_led_7_seg_buffer_left(int number){
 	led_7_seg_buffer[0] = (number / 10);
 	led_7_seg_buffer[1] = (number % 10);
@@ -222,25 +179,6 @@ void update_2_led_7_seg_buffer_right(int number){
 	led_7_seg_buffer[2] = (number / 10);
 	led_7_seg_buffer[3] = (number % 10);
 }
-
-
-//void Mode_count(){
-//    if(timer3_flag == 1) {
-//        count++;
-//        if(count == 1) {
-//            onoff_gates_led(1);
-//            display7SEG(led_7_seg_buffer[0]); // Hiển thị LED 1
-//        } else if(count == 2) {
-//            onoff_gates_led(2);
-//            display7SEG(led_7_seg_buffer[1]); // Hiển thị LED 2
-//        }
-//        if(count >= 2) {
-//            count = 0;
-//        }
-//        setTimer3(25);
-//    }
-//}
-
 
 void led_7_seg_run(){
 	onoff_gates_led(index_led_7_seg);

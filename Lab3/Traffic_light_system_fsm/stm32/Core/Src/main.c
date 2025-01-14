@@ -104,21 +104,8 @@ int main(void)
 
   while (1)
   {
-//	  fsm_for_input_processing();
-//	  mode1();
-//	  mode2();
-//	  Mode_count();
 	  led_7_seg_run();
 	  fsm_manual_run();
-
-
-
-
-
-
-
-
-
 
     /* USER CODE END WHILE */
 
@@ -266,7 +253,6 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	timer_run();
 	button_reading();
-//	Mode_count_Buffer();
  }
 /* USER CODE END 4 */
 

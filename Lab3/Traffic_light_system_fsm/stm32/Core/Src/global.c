@@ -17,9 +17,3 @@ int duration_time_of_AUTO_GREEN = 300;
 int buffer_duration_time = 100;
 
 int mode = INIT_SYSTEM;
-
-
-
-
-//int count = 0; //testgate
-

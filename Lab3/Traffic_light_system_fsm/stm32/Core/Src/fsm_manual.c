@@ -15,25 +15,6 @@
 
 extern int mode;
 
-
-//void mode1(){
-//	  update_2_led_7_seg_buffer_left(timer1_counter/100);
-//	  update_2_led_7_seg_buffer_right(timer2_counter/100);
-//	  fsm_automatic_run();
-//	  fsm_automatic_run1();
-//
-//}
-//
-//void mode2(){
-//		update_2_led_7_seg_buffer_left(mode);
-//		update_2_led_7_seg_buffer_right(buffer_duration_time/100);
-//		if(timer6_flag == 1){
-//			blinkind_led_traffic_x();
-//			blinkind_led_traffic_y();
-//			setTimer6(50);
-//		}
-//}
-
 void fsm_manual_run(){
 	switch(mode){
 		case INIT_SYSTEM:
