@@ -1,6 +1,7 @@
 ---
 
-# Traffic Light Control System on STM32
+<h1 align="center">Traffic Light Control System on STM32F103C6</h1>
+
 
 This repository contains a **traffic light control application** designed for an intersection with adjustable timing in both **automatic** and **manual** modes using mechanical buttons with software debouncing (covering **red**, **amber**, and **green** phases). The system is developed on an **STM32F103C6** microcontroller, simulated using **Proteus**, and implements a **Finite State Machine (FSM)** to manage various modes.
 
@@ -117,6 +118,7 @@ Ensure your development environment is configured for STM32 microcontrollers.
 │               └── ...
 |        
 ├── .gitignore
+├── Traffic-light-STM32F103C6-Proteus 8 Simulation.mp4
 ├── README.md                            # You're reading this file
 └── ...
 
@@ -168,18 +170,17 @@ Press the **first button** at any time to cycle through modes (1 → 2 → 3 →
    - Ensure the pin assignments in the .ioc file (`Lab3_fsm_traffic_light.ioc` or `main.c`) match your actual hardware connections (LEDs, 7-segment displays, buttons).
 
 4. **Build the Project**  
-   - Compile the code and generate the `.hex` file (you must go to Navigate to C/C++Build, select Settings, MCU Post build outputs, and check to the Intel Hex file).
+   - Compile the code (Ctrl + B) and the system will generate the `.hex` file. In case you dont see your `.hex` file, go to Navigate to C/C++Build, select Settings, MCU Post build outputs, and check to the Intel Hex file.
 
-5. **Proteus Simulation** (Optional)  
+5. **Proteus Simulation**  
    - Open the **Proteus schematic file** (`.pdsprj`).  
-   - Load the compiled firmware (hex file) into the virtual MCU.  
-   - Run the simulation to verify functionality before testing on real hardware.
-
-6. **Verify Operation**  
-   - Upon reset, the system starts in **Mode 1 (Normal)**.  
-   - Press **Button 1** to cycle modes.  
-   - In Modes 2–4, use **Button 2** to increment time, then press **Button 3** to set it.
-
+   - Load the compiled firmware (`.hex` file) into the virtual MCU.  
+   - Run the simulation to verify functionality.
+   - **Verify Operation**  
+         - Upon start or reset, the system begins in **Mode 1 (Normal)**.  
+         - Press **Button 1** to cycle modes.  
+         - In Modes 2–4, use **Button 2** to increment time, then press **Button 3** to set it.
+     
 ---
 
 ## 8. Future Improvements
