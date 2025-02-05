@@ -118,6 +118,7 @@ Ensure your development environment is configured for STM32 microcontrollers.
 │               └── ...
 |        
 ├── .gitignore
+├── Traffic-light-STM32F103C6-Proteus 8 Simulation.gif
 ├── Traffic-light-STM32F103C6-Proteus 8 Simulation.mp4
 ├── README.md                            # You're reading this file
 └── ...
@@ -167,7 +168,7 @@ Press the **first button** at any time to cycle through modes (1 → 2 → 3 →
 2. **Open Project** in your preferred STM32 IDE (recommend: **STM32CubeIDE**).
 
 3. **Check Pin Assignments**  
-   - Ensure the pin assignments in the .ioc file (`Lab3_fsm_traffic_light.ioc` or `main.c`) match your actual hardware connections (LEDs, 7-segment displays, buttons).
+   - Ensure the pin assignments in the `.ioc` file (`Lab3_fsm_traffic_light.ioc` or `main.c`) match your actual hardware connections (LEDs, 7-segment displays, buttons).
 
 4. **Build the Project**  
    - Compile the code (Ctrl + B) and the system will generate the `.hex` file. In case you dont see your `.hex` file, go to Navigate to C/C++Build, select Settings, MCU Post build outputs, and check to the Intel Hex file.
@@ -180,15 +181,27 @@ Press the **first button** at any time to cycle through modes (1 → 2 → 3 →
          - Upon start or reset, the system begins in **Mode 1 (Normal)**.  
          - Press **Button 1** to cycle modes.  
          - In Modes 2–4, use **Button 2** to increment time, then press **Button 3** to set it.
-     
+
+     ![Proteus Simulation](./Traffic-light-STM32F103C6-Proteus%208%20Simulation.gif)
+
+
 ---
 
 ## 8. Future Improvements
 
 - **Add More Intersection Directions**: Extend the system to handle more than two directions (e.g., a 4-way intersection).
 - **Implement Advanced Traffic Management**: For instance, dynamic timing based on traffic density.
+- **Implementation on real hardware.**
 
 ---
 
 **Thank you for checking out this project!**  
 If you have any questions or suggestions, feel free to open an issue or submit a pull request.
+
+# Author
+<div align="center">
+<a href="https://github.com/NgqvngVinh" target="_blank">
+  <img src="https://github.com/NgqvngVinh.png" alt="Avatar của tôi" width="60" style="border-radius: 50%;">
+</a>
+</div>
+
